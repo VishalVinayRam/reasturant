@@ -1,70 +1,86 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Sure! Here's an example of a README file that you can include for both the frontend and backend of your self-onboarding application:
 
-## Available Scripts
+Frontend README.md:
 
-In the project directory, you can run:
+markdown
+Copy code
+# Restaurant Self-Onboarding Frontend
 
-### `npm start`
+This is the frontend part of the Restaurant Self-Onboarding application. It provides a user interface for restaurants to self-onboard and provide their basic details for food delivery service.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone this repository to your local machine.
+2. Navigate to the project directory.
+3. Run `npm install` to install the dependencies.
+4. Run `npm start` to start the development server.
 
-### `npm test`
+The frontend will be accessible at http://localhost:3000.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
 
-### `npm run build`
+1. Open a web browser and navigate to http://localhost:3000.
+2. You will be greeted with the home page of the application.
+3. Click on the "Start Onboarding" button to proceed to the self-onboarding form.
+4. Fill in the required details of the restaurant and submit the form.
+5. Upon successful submission, a success message will be displayed.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React: JavaScript library for building user interfaces.
+- Node.js: JavaScript runtime environment for running the frontend application.
+- Fetch API: Used to send HTTP requests to the backend server.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Folder Structure
 
-### `npm run eject`
+- `src/`: Contains the source code for the frontend application.
+  - `components/`: Contains the React components used in the application.
+  - `App.js`: The main entry point of the application.
+  - `App.css`: Stylesheet for the application.
+  - `index.js`: Entry point for rendering the React app.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributing
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Backend README.md:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+markdown
+Copy code
+# Restaurant Self-Onboarding Backend
 
-## Learn More
+This is the backend part of the Restaurant Self-Onboarding application. It handles the REST API endpoints for receiving and processing restaurant self-onboarding data.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone this repository to your local machine.
+2. Navigate to the project directory.
+3. Run `npm install` to install the dependencies.
+4. Run `npm start` to start the backend server.
 
-### Code Splitting
+The backend server will be accessible at http://localhost:3000.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Endpoints
 
-### Analyzing the Bundle Size
+- POST `/restaurants`: Creates a new restaurant with the provided data.
+  - Request Body: JSON object containing restaurant details (name, contactName, pincode, location, website, phoneNumber, averageDailyTransactions).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Technologies Used
 
-### Making a Progressive Web App
+- Node.js: JavaScript runtime environment for running the backend server.
+- Express: Web application framework for handling HTTP requests and routes.
+- MongoDB: NoSQL database for storing restaurant data.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Folder Structure
 
-### Advanced Configuration
+- `src/`: Contains the source code for the backend server.
+  - `controllers/`: Contains the route controllers for handling HTTP requests.
+  - `models/`: Contains the MongoDB models for the restaurant data.
+  - `routes/`: Contains the route definitions for the API endpoints.
+  - `app.js`: The main entry point of the backend server.
+  - `db.js`: Connects to the MongoDB database.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contributing
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
